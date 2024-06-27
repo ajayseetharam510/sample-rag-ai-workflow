@@ -1,0 +1,38 @@
+Active Directory has two forms of common security principals: user accounts. These accounts represent a physical entity that is a person. 
+Active Directory groups may be organized in a hierarchy like a folder structure. 
+Users are assigned to Active Directory groups.Users that are assigned to the Active Directory group are members of the group. Usually users with similar profile attributes of Organization, Department, Role are assigned to 
+the same Active Directory Group. 
+ 
+Users have profile attributes such as 
+first name, Last Name, Organization, Department, Role, Manager Name and are assigned one or moe Groups. 
+If a user has a manager i.e. a Manager Name that is not "None" then the user's manager will have additional group assignments. 
+The significant profile attributes to determine Active Directory group assignment are
+Organization, Department, Role and whether the user is a manager of other users. 
+
+First name Ajay, Last Name S in the Organization Presales and Department Solution Engineering and Role Architect with Manager Jim is in the ALL_SE_GROUP
+First name Satish, Last Name P in the Organization Presales and Department Solution Engineering and Role Director with Manager Doug is in the ALL_SE_GROUP 
+
+
+A good summary of the Active Directory Group for the above data would be as follows: 
+The ALL_SE_GROUP  group contains most users that have the Organization as Presales and Department as Solution Engineering. Examples of users 
+in this group are Ajay and Satish.
+
+Group Member data: 
+
+First name Ajay, Last Name S in the Organization Presales and Department Solution Engineering and Role Architect with Manager Jim is in the ALL_SE_GROUP
+First name Dan, Last Name C in the Organization Presales and Department Solution Engineering and Role Architect with Manager Jim is in the ALL_SE_GROUP
+First name Bala, Last Name P in the Organization Presales and Department Solution Engineering and Role Architect with Manager Jim is in the ALL_SE_GROUP
+First name Satish, Last Name P in the Organization Presales and Department Solution Engineering and Role Senior Director with Manager Doug is in the ALL_SE_GROUP 
+First name Satish, Last Name P in the Organization Presales and Department Solution Engineering and Role Senior Director with Manager Doug is in the CLARI_ADVANCED_USER_GROUP 
+First name Wendy, Last Name L in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the ALL_SE_GROUP 
+First name Wendy, Last Name L in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the CLARI_USER_GROUP 
+First name Akin, Last Name E in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the ALL_SE_GROUP 
+First name Akin, Last Name E in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the CLARI_USER_GROUP 
+First name Jim, Last Name P in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the ALL_SE_GROUP 
+First name Jim, Last Name P in the Organization Presales and Department Solution Engineering and Role Director with Manager Satish  is in the CLARI_USER_GROUP 
+First name Doug, Last Name I in the Organization Presales and Department Solution Engineering and Role VP with Manager Todd is in the ALL_SE_GROUP 
+First name Doug, Last Name I in the Organization Presales and Department Solution Engineering and Role VP with Manager Todd is in the CLARI_ADVANCED_USER_GROUP 
+First name Doug, Last Name I in the Organization Presales and Department Solution Engineering and Role VP with Manager Todd is in the SALESFORCE_ADVANCED_USER_GROUP 
+First name Ka, Last Name K in the Organization Presales and Department  and Role Operations with Manager Doug is in the CLARI_ADMIN_USER_GROUP 
+First name Ka, Last Name K in the Organization Presales and Department  and Role Operations with Manager Doug is in the CLARI_ADMIN_USER_GROUP 
+First name Ka, Last Name K in the Organization Presales and Department  and Role Operations with Manager Doug is in the SALESFORCE_ADMIN_USER_GROUP 
